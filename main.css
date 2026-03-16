@@ -1,0 +1,136 @@
+/* ===============================
+   GLOBAL STYLING
+================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    padding: 40px 0;
+}
+
+/* ===============================
+   MAIN HEADING
+================================= */
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 32px;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+}
+
+/* ===============================
+   CARD DESIGN (GLASS EFFECT)
+================================= */
+.card {
+    width: 75%;
+    max-width: 800px;
+    margin: 25px auto;
+    padding: 30px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    color: white;
+    transition: 0.4s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+.card h2 {
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+/* ===============================
+   INPUTS & TEXTAREA
+================================= */
+input,
+textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.8);
+    color: #333;
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+/* ===============================
+   BUTTON DESIGN
+================================= */
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(45deg, #00c6ff, #0072ff);
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* ===============================
+   OUTPUT AREA
+================================= */
+.output {
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.2);
+    line-height: 1.7;
+    font-size: 15px;
+    word-wrap: break-word;
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+/* ===============================
+   ANIMATION
+================================= */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===============================
+   RESPONSIVE
+================================= */
+@media (max-width: 768px) {
+    .card {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}

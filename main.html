@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Powered Content Generator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <h1>🚀 AI Content Generator</h1>
+
+    <div class="card">
+        <h2>Ask Me Anything</h2>
+        <input type="text" id="questionInput" placeholder="Ask any question...">
+        <button onclick="askAI()">Ask</button>
+        <div id="answerOutput" class="output"></div>
+    </div>
+ 
+    
+    <div class="card">
+        <h2>Quick Summarizer</h2>
+        <textarea id="summaryInput" placeholder="Paste text here..."></textarea>
+        <button onclick="summarizeText()">Summarize</button>
+        <div id="summaryOutput" class="output"></div>
+    </div>
+
+    
+    <div class="card">
+        <h2>Idea Spark</h2>
+        <input type="text" id="ideaInput" placeholder="e.g. Blog ideas about JavaScript">
+        <button onclick="generateIdeas()">Generate Ideas</button>
+        <div id="ideaOutput" class="output"></div>
+    </div>
+
+    
+    <div class="card">
+        <h2>Definition Finder</h2>
+        <input type="text" id="definitionInput" placeholder="Enter a term...">
+        <button onclick="getDefinition()">Get Definition</button>
+        <div id="definitionOutput" class="output"></div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
